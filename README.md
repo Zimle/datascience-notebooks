@@ -1,2 +1,4 @@
 # datascience-notebooks
-These are some notebooks I made learning some Data Science / Machine Learning. If not mentioned, the datasets in the notebooks are taken from the kaggle website
+These are some notebooks I made learning some Data Science / Machine Learning. If not mentioned, the datasets in the notebooks are taken from the kaggle website. Here are some comments on them:
+- failing_mnist is a first attempt to use standard sklearn classifiers on the MNIST data set. I tried some various techniques and made a lot of mistakes. In the end, some quick classifiers worked worse on the augmented data set. Later on , I found the mistake (transforming pictures made the pixels have values between 0 and 1, and not 0 and 255 as the initial data; fixed it but gave not a great boost)
+- PrudInsurance uses the Prudential Insurance Data Set to predict the risk class of a customer. I wanted to use neural networks, even though they seem not best fit for the tasked and played a little bit with it. Main problem is that the results vary a lot with each run, which makes twisting up to now useless.
